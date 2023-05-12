@@ -1,3 +1,10 @@
+  @font-face{
+    font-family: customFonts;
+    src: url(/misc/Raleway-ExtraLight.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
   main {
       display: flex;
       flex-direction: column;
@@ -9,10 +16,18 @@
         width: 100%;
         height: 100vh;
     } 
-    #image-container {
-     height: fit-content;
+    #images {
+      height: fit-content;
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .image-container{
+      height: fit-content;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
@@ -26,25 +41,31 @@
       column-gap: 10vw;
     }
     .button {
-    background-color:#CB001D;
+    background-color:rgb(199,0,3);
     font-size: 3vw;
     border-radius: 5vh;
     height: 100%;
     width: 30vw;
     text-align: center;
+    border-width: 0.2vw;
+    border-color: #AA934D;
+    border-style: solid;
   }
   body {
     margin: 0;
     padding: 0;
-  
+    
   }
   header {
-  background-color:#CB001D;
+  background-color:rgb(199,0,3);
   border-radius: 5vh;
   text-align: center;
   font-size: 5vw;
   margin: 1vw;
   width: 70vw;
+  border-width: 0.2vw;
+  border-color: #AA934D;
+  border-style: solid;
   }
   a:link {
     color: #AA934D;
@@ -62,7 +83,8 @@
   }
   
   body {
-    background:url(/img/image.png);
+    background:url(/img/Bakgrund_1683902038-trimmy-Bakgrund.png);
+    background-size: 100vw;
   }
 
   .top {
@@ -71,24 +93,34 @@
     justify-content: center;
     align-items: center;
     height: 30vh;
-    background-color: rgba(0, 0, 0, 0.507);
+
   }
   .textbox{
     display: flex;
-    background-color: rgba(230, 166, 82, 0.507);
+    background-color: rgb(199,0,3) ;
     border-radius: 5vh;
     width: 66vw;
     align-items: center;
+    border-width: 0.2vw;
+    border-color: #AA934D;
+    border-style: solid;
 
   }
   h1{
     padding: 1vw;
     font-size: 6vw;
     text-align: center;
+    font-family: Algerian;
+    color: #AA934D;
+    font-weight: normal;
   }
-  h2{
-    text-align: center;
-    font-size: 4vw;
+  p{
+    text-align: left;
+    font-size: 3vw;
+    font-family: Algerian;
+    padding: 1vw;
+    color: #AA934D;
+    
   }
   h3{
     text-align: center;
@@ -100,6 +132,7 @@
   width: 40vw;
   height: 40vw;
   border-radius: 5vh;
+  
 }
 .textpicture2 {
   padding: 1vw;
@@ -118,11 +151,25 @@
   margin: 1vw;
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 180, 0, 0.707);
+  background-color:rgb(199,0,3);
   border-radius: 5vh;
   width: 66vw;
   align-items: center;
+  border-width: 0.2vw;
+  border-color: #AA934D;
+  border-style: solid;
 
+}
+.review {
+  font-size: 2vw;
+}
+h2 {
+  font-size: 3vw;
+  font-family: Algerian;
+  padding: 1vw;
+  text-align: center;
+  color: #AA934D;
+  font-weight: normal;
 }
 @media only screen and (max-width: 600px)  {
   .button {
@@ -135,16 +182,16 @@
       justify-content: center;
       align-items: center;
       height: 20vh;
-      background-color: rgba(0, 0, 0, 0.507);
-    
+      
   }
-  #image-container {
+  #images {
     height: fit-content;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
    }
+   
    .textpicture2 {
     padding: 1vw;
     width: 60%;
@@ -160,7 +207,7 @@
     margin: 1vw;
     display: flex;
     flex-direction: column;
-    background-color: rgba(245, 180, 0, 0.707);
+    background-color:rgb(199,0,3) ;
     border-radius: 5vh;
     width: 80vw;
     align-items: center;
@@ -179,10 +226,21 @@
   }
   h2 {
     padding: 1vw;
-    font-size: 6vw;
+    font-size: 8vw;
     text-align: center;
+    font-family: Algerian;
   }
-  menu {
-    flex-direction: column;
+  p{
+    text-align: left;
+    font-size: 3vw;
+    font-family: Algerian;
+    padding: 1vw;
+    color: #AA934D;
+    
+  menu{
+    flex-direction:column;
+  }
+  .review {
+    font-size: 10vw;
   }
 }
